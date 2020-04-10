@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.source = { :git => 'https://github.com/priteshrnandgaonkar/rsocket-cpp.git', :tag => "0.11.0"}
   spec.module_name = 'RSocket'
   spec.static_framework = true
-  spec.source_files = 'rsocket/benchmarks/*',
+  spec.source_files = 'rsocket/benchmarks/*.{h,cpp}',
                       'rsocket/framing/*',
                       'rsocket/internal/*',
                       'rsocket/statemachine/*',
@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
                       'rsocket/transports/**/*',
                       'yarpl/observable/*',
                       'yarpl/flowable/*',
-                      'rsocket/*'
+                      'rsocket/*.{h,cpp}'
 
   spec.libraries = "stdc++"
   spec.compiler_flags = '-std=c++1y'
